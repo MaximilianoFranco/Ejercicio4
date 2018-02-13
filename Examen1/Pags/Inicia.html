@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Iniciar Seción</title>
+	<style >
+		th#h, td#h, tr#h {
+		 padding: 8px;
+		 text-align: left;
+		 border-bottom: 1px solid #ddd;
+		 border-top: 1px solid white;
+		 border-left: 1px solid white;
+		 border-right: 1px solid white;
+
+		}
+
+		tr#Silver:hover{background-color:silver}
+		td#White:hover{background-color:white}
+	</style>
+</head>
+<body>
+	<table id="Silver">
+		<tr id="Silver">
+			<td colspan="2" id="White"> Iniciar Seción o Crear Seción</td>
+		</tr>
+		<tr id="Silver">
+			<td id="White"><p><b>User name:</b></p></td>
+			<td id="White"><input type="email" name="email" placeholder="ejemplo@hotmail.com" required></td>
+		</tr>
+		<tr id="Silver">
+			<td id="White"><p><b>Password:</b></p></td>
+			<td id="White"><input type="password" name="psw"   maxlength="8" ></td>
+		</tr>
+		<tr id="Silver">
+			<td id="White"> Genero: </td>
+			<td id="White">
+				<input type="radio" name="gender" value="male" checked> Male<br>
+  				<input type="radio" name="gender" value="female"> Female<br>
+  				<input type="radio" name="gender" value="other"> Other <br> <br>
+			</td>
+		</tr>
+		<tr id="Silver">
+			<td id="White">Introduce tu edad: </td>
+			<td id="White"><input type="number" name="edad" min="5"></td>
+		</tr>
+		<tr id="Silver">
+			<td id="White"><input type="submit" value="Aceptar" > </td>
+			<td id="White"><input type="reset" value="cancelar" ></td>
+		</tr>
+
+
+	</table>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Divertirse</title>
+	<link rel="stylesheet" type="text/css" href="estilos.css"> 
+</head>
+<body>
+	<div class="grow pic">
+  		<img src="Images/OP.png" alt="One piece">
+	</div>
+
+	<div class="shrink pic">
+		<img src="Images/FT.jpg" alt="FairyTail">
+	</div>
+	<div class="morph pic">
+  		<img src="Images/DT.png" alt="Digimon">
+	</div>
+
+	<div class="focus pic">
+    	<img src="Images/DBZ.jpg" alt="DragonBallZ">
+  	</div>
+
+  	<canvas id="Text" width="300" height="150" style="border:1px solid cyan;"> 
+	No soporta este contenido </canvas>
+
+	<script>
+	//Se usa java script por lo que investigue
+		var c = document.getElementById("Text");
+		var ctx = c.getContext("2d");
+		ctx.font = "30px Arial";
+		ctx.strokeText("Algo que investigue",10,50);
+	</script><br>
+
+	<img id="naru" src="Images/NS.jpg" alt="Naruto" width="266" height="400">
+
+	<canvas id="Imag" width="266" height="400"
+	style="border:1px solid red;">
+	No soporta este contenido </canvas>
+
+	<p><button onclick="myCanvas()">Copy img</button></p>
+
+	<script>
+	//Se usa java script por lo que investigue
+		function myCanvas() {
+    		var c = document.getElementById("Imag");
+    		var ctx = c.getContext("2d");
+    		var img = document.getElementById("naru");
+    		ctx.drawImage(img,10,10);
+		}
+	</script><br>
+
+	<h1>Mapa de google</h1>
+
+	<div id="map" style="width:400px;height:400px;background:yellow"></div>
+
+	<script>
+	//Se usa java script por lo que investigue
+		function myMap() {
+    		var mapOptions = {
+        		center: new google.maps.LatLng(51.5, -0.12),
+        		zoom: 10,
+        		mapTypeId: google.maps.MapTypeId.HYBRID
+    		}
+			var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+		}
+	</script>
+
+	<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+</body>
+</html>
